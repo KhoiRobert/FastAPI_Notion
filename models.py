@@ -5,10 +5,10 @@ from database import Base
 
 
 class Todo(Base):
-    __tablename__ = "todos"
+    __tablename__ = "todos"#11
 
-    id = Column(Integer, primary_key=True, index=True )
+    id = Column(Integer, primary_key=True, index=True )#12
     title =Column(String)
     complete = Column(Boolean, default=False)
-    date_created = Column(DateTime(timezone=True), server_default=func.now())
+    date_created = Column(DateTime(timezone=True), server_default=func.now())#13
 
